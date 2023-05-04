@@ -5,6 +5,447 @@
     <link rel="stylesheet" href="https://www.halykbank.kz/common/css/main.min.css" type="text/css">
   </head>
   <body>
+    <header class="relative bg-white z-50 shadow-md <md:hidden _js-bvi-filter">
+        <div class="container">
+          <div class="flex items-center -gw">
+            <div class="w-2/12 gw">
+              <a href="https://halykbank.kz/en">
+                                <img src="https://halykbank.kz/storage/app/uploads/public/643/cb6/14c/643cb614c6d6a633134492.svg" alt="logo">
+                            </a>
+            </div>
+            <div class="w-10/12 gw">
+              <div class="flex items-center justify-between border-b border-gray-50 py-2.5">
+                <div class="">
+    <!-- nav-main -->
+    <div class="text-sm text-gray-400 whitespace-nowrap">
+        <ul class="flex -mx-2">
+                              <li class="px-2"><a href="https://halykbank.kz/en" class=" text-primary ">Private customers</a></li>
+                                        <li class="px-2"><a href="https://halykbank.kz/en/business" class="">Business</a></li>
+                                        <li class="px-2"><a href="https://halykbank.kz/en/halykclub/page/halyk-club" class="">Halyk Club</a></li>
+                                        <li class="px-2"><a href="https://halykbank.kz/en/knowledge_base" class="">Knowledge base</a></li>
+                                                        <li class="px-2"><a href="https://halykbank.kz/en/about/press_center" class="">About bank</a></li>
+                        </ul>
+    </div><!-- end nav-main -->
+    </div>
+                <div class="flex items-center">
+                  <!-- <a href="#" x-data x-data @click="$store.modal.show({ name: '.modal-bvi', event: $event })"><span class="mr-1 text-black text-[24px]"><i class="icon icon-volume"></i></span></a> -->
+                  <a href="#" x-data="" @click.prevent="$store.bvi.toggle()" class="inline-flex items-center text-sm mr-6"><span class="mr-1 text-black text-[24px]"><i class="icon icon-capabilities"></i></span> For the visually impaired</a>
+                  <a href="https://halykbank.kz/en/map/atm" class="whitespace-nowrap inline-flex items-center text-sm mr-6"><span class="mr-1 text-primary text-[24px]"><i class="icon icon-pin"></i></span>Map</a>
+                  <a href="tel:7111" class="inline-flex items-center text-sm mr-6"><span class="mr-1 text-primary text-[24px]"><i class="icon icon-phone"></i></span>7111</a>
+                  <div class="relative" x-data="{isOpen: false}">
+                    <div class="h-6 flex items-center pr-7 py-1 pl-2 cursor-pointer border border-solid border-transparent border-b-0" @click="isOpen = !isOpen" :class="{' !border-gray-100 rounded-t': isOpen}">
+                      <div class="text-sm">Eng</div>
+                      <span class="w-6 h-6 text-gray-300 absolute right-0 top-0 text-[24px] transform translate  duration-200 ease-in-out" :class="{'rotate-180': isOpen}">
+                        <i class="icon icon-chevron-down"></i>
+                      </span>
+                    </div>
+                    <ul class="absolute top-full inset-x-0 border border-solid border-gray-100 border-t-0 rounded-b bg-white px-2 pb-2" x-show="isOpen" style="display: none;">
+                                                          <li class="uppercase text-sm mt-1 mb-1.5 last:mb-0"><a href="#" data-request="onSwitchLocale" data-request-data="locale: 'kz'">Қаз</a></li>
+                                                                            <li class="uppercase text-sm mt-1 mb-1.5 last:mb-0"><a href="#" data-request="onSwitchLocale" data-request-data="locale: 'ru'">Рус</a></li>
+                                                                                            </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-center justify-between py-1.5 <md:h-auto h-[44px]">
+                <div class="">
+                  <div class="">    
+    <div class="">
+        <div class="flex -mx-2">
+                    <div class="px-2 group _css-hover-group ">
+                <a href="https://halykbank.kz/en/homebank" class="block relative group-hover:text-primary">
+                    Halyk
+                    <span class="absolute inset-x-0 top-full h-[12px]"></span>
+                    <span class="bg-primary absolute inset-x-0 h-[3px] bottom-[-12px] opacity-0 group-hover:opacity-100"></span>
+                </a>
+                        </div>
+                    <div class="px-2 group _css-hover-group ">
+                <a href="https://halykbank.kz/en/credits" class="block relative group-hover:text-primary">
+                    Loans
+                    <span class="absolute inset-x-0 top-full h-[12px]"></span>
+                    <span class="bg-primary absolute inset-x-0 h-[3px] bottom-[-12px] opacity-0 group-hover:opacity-100"></span>
+                </a>
+                            <div class="absolute top-full inset-x-0 z-50 bg-gray-50 pt-8 pb-[148px] _css-hover-group-sub">
+                    <div class="container">
+                        <div class="flex flex-wrap -gw">
+                                                    <div class="w-3/12 gw">
+                                                            <div class="mb-8 last:mb-0">
+                                                                                                    <a href="https://halykbank.kz/en/credits/onlajn-kredit" class="text-lg block font-semibold text-gray-600 pb-3 mb-3 border-b  border-gray-100">Online loan</a>
+                                                                                                                                                                                                    <a href="https://halykbank.kz/en/online-credit" class="text-sm block mb-3 last:mb-0">Online loan in Halyk app</a>
+                                                                                                                                    <a href="https://halykbank.kz/en/credit/air-astana" class="text-sm block mb-3 last:mb-0">Online loan to purchase Air Astana tickets</a>
+                                                                                                                                    <a href="https://halykbank.kz/en/credit/flyarystan" class="text-sm block mb-3 last:mb-0">Online loan for FlyArystan flights</a>
+                                                                </div>
+                                                            <div class="mb-8 last:mb-0">
+                                                                                                                                                                    <a href="https://halykbank.kz/en/credit/credit-moskommercbank" class="text-lg block font-semibold text-gray-600 pb-3 mb-3 border-b  border-gray-100">Information on loans for clients of CB Moskommertsbank (JSC)</a>
+                                                                                                                                    <a href="https://halykbank.kz/en/credit/credit-moskommercbank" class="text-sm block mb-3 last:mb-0">Information on loans for clients of CB Moskommertsbank (JSC)</a>
+                                                                </div>
+                                                            <div class="mb-8 last:mb-0">
+                                                                                                                                                                    <a href="https://halykbank.kz/en/credit/kredit-gaz" class="text-lg block font-semibold text-gray-600 pb-3 mb-3 border-b  border-gray-100">Interest Free Loan for Connection to Gas Supply </a>
+                                                                                                                                    <a href="https://halykbank.kz/en/credit/kredit-gaz" class="text-sm block mb-3 last:mb-0">Interest Free Loan for Connection to Gas Supply in Almaty</a>
+                                                                </div>
+                                                        </div>
+                                                    <div class="w-3/12 gw">
+                                                            <div class="mb-8 last:mb-0">
+                                                                                                    <a href="https://halykbank.kz/en/credits/loans" class="text-lg block font-semibold text-gray-600 pb-3 mb-3 border-b  border-gray-100">Loans</a>
+                                                                                                                                    <a href="https://halykbank.kz/en/credit/refinans" class="text-sm block mb-3 last:mb-0">Refinancing</a>
+                                                                                                                                    <a href="https://halykbank.kz/en/credit/bez-zaloga" class="text-sm block mb-3 last:mb-0">No collateral up to 7,000,000₸</a>
+                                                                                                                                    <a href="https://halykbank.kz/en/credit/pod-depozit" class="text-sm block mb-3 last:mb-0">Deposit secured loan</a>
+                                                                                                                                    <a href="https://halykbank.kz/en/credit/na-neotlozhnye-nuzhdy" class="text-sm block mb-3 last:mb-0">Immediate needs</a>
+                                                                </div>
+                                                            <div class="mb-8 last:mb-0">
+                                                                                                    <a href="https://halykbank.kz/en/credits/avtocredit" class="text-lg block font-semibold text-gray-600 pb-3 mb-3 border-b  border-gray-100">Auto loan</a>
+                                                                                                                                    <a href="https://halykbank.kz/en/credit/avtokredit-bez-zaloga" class="text-sm block mb-3 last:mb-0">Unsecured car loan</a>
+                                                                                                                                    <a href="https://halykbank.kz/en/credit/v-salonah-partnerah" class="text-sm block mb-3 last:mb-0">Car loan in partner salons</a>
+                                                                                                                                    <a href="https://halykbank.kz/en/credit/obshchee-avtokreditovanie" class="text-sm block mb-3 last:mb-0">Car loan standard</a>
+                                                                                                                                    <a href="https://halykbank.kz/en/credit/lgotnoe-avtokreditovanie" class="text-sm block mb-3 last:mb-0">Soft car loan</a>
+                                                                </div>
+                                                        </div>
+                                                    <div class="w-3/12 gw">
+                                                            <div class="mb-8 last:mb-0">
+                                                                                                    <a href="https://halykbank.kz/en/credits/ipoteka" class="text-lg block font-semibold text-gray-600 pb-3 mb-3 border-b  border-gray-100">Mortgage</a>
+                                                                                                                                    <a href="https://halykbank.kz/en/credit/bazis" class="text-sm block mb-3 last:mb-0">Primary housing from BAZIS-A</a>
+                                                                                                                                    <a href="https://halykbank.kz/en/credit/ipoteka-4you" class="text-sm block mb-3 last:mb-0">Primary housing from BI Group</a>
+                                                                                                                                    <a href="https://halykbank.kz/en/credit/ipoteka" class="text-sm block mb-3 last:mb-0">Halyk mortgage</a>
+                                                                                                                                    <a href="https://halykbank.kz/en/credit/7-20-25" class="text-sm block mb-3 last:mb-0">«7-20-25»</a>
+                                                                                                                                    <a href="https://halykbank.kz/en/credit/halyk-sale" class="text-sm block mb-3 last:mb-0">Halyk Sale</a>
+                                                                </div>
+                                                            <div class="mb-8 last:mb-0">
+                                                                                                                                                                    <a href="https://halykbank.kz/en/credit/uregulirovanie-problemnoj-zadolzhennosti" class="text-lg block font-semibold text-gray-600 pb-3 mb-3 border-b  border-gray-100">Settlement of bad debts</a>
+                                                                                                                                    <a href="https://halykbank.kz/en/credit/uregulirovanie-problemnoj-zadolzhennosti" class="text-sm block mb-3 last:mb-0">Settlement of bad debts</a>
+                                                                </div>
+                                                        </div>
+                                                                            <div class="w-3/12 gw ml-auto">
+                                <div class="">
+                                    <div class="h-full border border-gray-100 bg-gray-50 rounded-xl flex flex-col">
+                                                                            <div class=""><img src="https://halykbank.kz/storage/app/media/Submenu/Credit_submenu_2.png" class="rounded-t-xl" alt=""></div>
+                                                                            <div class="p-4 flex-3 flex flex-col justify-between">
+                                            <div class="mb-3">
+                                                <div class="text-lg font-bold mb-3">Кредит без залога</div>
+                                                <div class="text-sm text-gray-600 min-h-90px">До 7 000 000 ₸ без залога!</div>
+                                            </div>
+                                                                                    <div class="">
+                                                <a href="https://halykbank.kz/credit/bez-zaloga" class="btn btn-green-light">Подробнее</a>
+                                            </div>
+                                                                                </div>
+                                    </div>
+                                </div>
+                            </div>
+                                                </div>
+                    </div>
+                </div>
+                        </div>
+                    <div class="px-2 group _css-hover-group ">
+                <a href="https://halykbank.kz/en/market" class="block relative group-hover:text-primary">
+                    Market
+                    <span class="absolute inset-x-0 top-full h-[12px]"></span>
+                    <span class="bg-primary absolute inset-x-0 h-[3px] bottom-[-12px] opacity-0 group-hover:opacity-100"></span>
+                </a>
+                        </div>
+                    <div class="px-2 group _css-hover-group ">
+                <a href="https://halykbank.kz/en/instalments" class="block relative group-hover:text-primary">
+                    Installment
+                    <span class="absolute inset-x-0 top-full h-[12px]"></span>
+                    <span class="bg-primary absolute inset-x-0 h-[3px] bottom-[-12px] opacity-0 group-hover:opacity-100"></span>
+                </a>
+                            <div class="absolute top-full inset-x-0 z-50 bg-gray-50 pt-8 pb-[148px] _css-hover-group-sub">
+                    <div class="container">
+                        <div class="flex flex-wrap -gw">
+                                                    <div class="w-3/12 gw">
+                                                            <div class="mb-8 last:mb-0">
+                                                                                                                                                                    <a href="https://halykbank.kz/en/card/karta-dlya-rassrochki-light" class="text-lg block font-semibold text-gray-600 pb-3 mb-3 border-b  border-gray-100">Halyk Light Installment Card</a>
+                                                                                                                                                                                                    <a href="https://halykbank.kz/en/card/karta-dlya-rassrochki-light" class="text-sm block mb-3 last:mb-0">Halyk Light</a>
+                                                                </div>
+                                                            <div class="mb-8 last:mb-0">
+                                                                                                    <a href="https://halykbank.kz/en/instalments/rassrochka-v-magazinah" class="text-lg block font-semibold text-gray-600 pb-3 mb-3 border-b  border-gray-100">Рассрочка в магазинах</a>
+                                                                                                                                    <a href="https://halykbank.kz/en/instalment/chocomart" class="text-sm block mb-3 last:mb-0">Chocomart Installment Online</a>
+                                                                                                                                    <a href="https://halykbank.kz/en/instalment/forakz" class="text-sm block mb-3 last:mb-0"> Fora.kz Installment Online</a>
+                                                                                                                                    <a href="https://halykbank.kz/en/instalment/kama-kazakhstan" class="text-sm block mb-3 last:mb-0">Trade house Kama-Kazakhstan (Kama-Tyres) Installment Online         </a>
+                                                                                                                                    <a href="https://halykbank.kz/en/instalment/formula-7" class="text-sm block mb-3 last:mb-0"> Formula 7 Installment Online </a>
+                                                                                                                                    <a href="https://halykbank.kz/en/instalment/rassrochka-viled" class="text-sm block mb-3 last:mb-0">Viled Installment Online </a>
+                                                                </div>
+                                                        </div>
+                                                    <div class="w-3/12 gw">
+                                                            <div class="mb-8 last:mb-0">
+                                                                                                    <a href="https://halykbank.kz/en/instalments/online-rassrochka" class="text-lg block font-semibold text-gray-600 pb-3 mb-3 border-b  border-gray-100">Installment Online</a>
+                                                                                                                                                                                                    <a href="https://halykbank.kz/en/credit/rassrochka-td" class="text-sm block mb-3 last:mb-0">Technodom Installment Online</a>
+                                                                                                                                                                                                    <a href="https://halykbank.kz/en/credit/rassrochka-sulpak" class="text-sm block mb-3 last:mb-0">Sulpak Installment Online</a>
+                                                                                                                                    <a href="https://halykbank.kz/en/instalment/mechta" class="text-sm block mb-3 last:mb-0">Mechta.kz Installment Online</a>
+                                                                                                                                    <a href="https://halykbank.kz/en/instalment/rassrochka-alser" class="text-sm block mb-3 last:mb-0">Alser Installment Online</a>
+                                                                                                                                    <a href="https://halykbank.kz/en/instalment/rassrochka-evrika" class="text-sm block mb-3 last:mb-0">Evrika Installment Online</a>
+                                                                                                                                    <a href="https://halykbank.kz/en/instalment/iSpace" class="text-sm block mb-3 last:mb-0">iSpace Installment Online</a>
+                                                                                                                                    <a href="https://halykbank.kz/en/instalment/marwin" class="text-sm block mb-3 last:mb-0">MARWIN Installment Online</a>
+                                                                                                                                    <a href="https://halykbank.kz/en/instalment/vlife" class="text-sm block mb-3 last:mb-0">Online installment plan in the Vlife online store</a>
+                                                                </div>
+                                                        </div>
+                                                    <div class="w-3/12 gw">
+                                                            <div class="mb-8 last:mb-0">
+                                                                                                                                                                    <a href="https://halykbank.kz/en/instalment/homebank-rassrochka" class="text-lg block font-semibold text-gray-600 pb-3 mb-3 border-b  border-gray-100">Halyk Homebank Installment Plan</a>
+                                                                                                                                    <a href="https://halykbank.kz/en/instalment/homebank-rassrochka" class="text-sm block mb-3 last:mb-0">Halyk Homebank Installment Plan</a>
+                                                                </div>
+                                                        </div>
+                                                                            <div class="w-3/12 gw ml-auto">
+                                <div class="">
+                                    <div class="h-full border border-gray-100 bg-gray-50 rounded-xl flex flex-col">
+                                                                            <div class=""><img src="https://halykbank.kz/storage/app/media/Submenu/Rassrochka_submenu.png" class="rounded-t-xl" alt=""></div>
+                                                                            <div class="p-4 flex-3 flex flex-col justify-between">
+                                            <div class="mb-3">
+                                                <div class="text-lg font-bold mb-3">Рассрочка</div>
+                                                <div class="text-sm text-gray-600 min-h-90px">Без процентов и переплат!</div>
+                                            </div>
+                                                                                    <div class="">
+                                                <a href="https://halykbank.kz/instalment/homebank-rassrochka" class="btn btn-green-light">Подробнее</a>
+                                            </div>
+                                                                                </div>
+                                    </div>
+                                </div>
+                            </div>
+                                                </div>
+                    </div>
+                </div>
+                        </div>
+                    <div class="px-2 group _css-hover-group ">
+                <a href="https://halykbank.kz/en/cards" class="block relative group-hover:text-primary">
+                    Cards
+                    <span class="absolute inset-x-0 top-full h-[12px]"></span>
+                    <span class="bg-primary absolute inset-x-0 h-[3px] bottom-[-12px] opacity-0 group-hover:opacity-100"></span>
+                </a>
+                            <div class="absolute top-full inset-x-0 z-50 bg-gray-50 pt-8 pb-[148px] _css-hover-group-sub">
+                    <div class="container">
+                        <div class="flex flex-wrap -gw">
+                                                    <div class="w-3/12 gw">
+                                                            <div class="mb-8 last:mb-0">
+                                                                                                    <a href="https://halykbank.kz/en/cards/debetovye-karty" class="text-lg block font-semibold text-gray-600 pb-3 mb-3 border-b  border-gray-100">Debit cards</a>
+                                                                                                                                    <a href="https://halykbank.kz/en/card/digital" class="text-sm block mb-3 last:mb-0">Halyk Bonus Digital Card</a>
+                                                                                                                                                                                                    <a href="https://halykbank.kz/en/card/dostavka" class="text-sm block mb-3 last:mb-0">Halyk Bonus</a>
+                                                                                                                                    <a href="https://halykbank.kz/en/card/visa-gold-sinooil" class="text-sm block mb-3 last:mb-0">Sinooil Digital Card</a>
+                                                                                                                                    <a href="https://halykbank.kz/en/card/black" class="text-sm block mb-3 last:mb-0">Black Card</a>
+                                                                                                                                    <a href="https://halykbank.kz/en/card/diamond" class="text-sm block mb-3 last:mb-0">Diamond Card</a>
+                                                                                                                                    <a href="https://halykbank.kz/en/card/easy-digital" class="text-sm block mb-3 last:mb-0">Halyk Easy Card</a>
+                                                                                                                                    <a href="https://halykbank.kz/en/card/special" class="text-sm block mb-3 last:mb-0">Special Allowance Card</a>
+                                                                                                                                    <a href="https://halykbank.kz/en/card/card-nerezident" class="text-sm block mb-3 last:mb-0">Card for non-resident of Kazakhstan</a>
+                                                                </div>
+                                                            <div class="mb-8 last:mb-0">
+                                                                                                                                                                    <a href="https://halykbank.kz/en/card/dostavka" class="text-lg block font-semibold text-gray-600 pb-3 mb-3 border-b  border-gray-100">Free delivery</a>
+                                                                                                                                                                                                    <a href="https://halykbank.kz/card/dostavka" class="text-sm block mb-3 last:mb-0">Free delivery</a>
+                                                                </div>
+                                                        </div>
+                                                    <div class="w-3/12 gw">
+                                                            <div class="mb-8 last:mb-0">
+                                                                                                    <a href="https://halykbank.kz/en/cards/kreditnye-karty" class="text-lg block font-semibold text-gray-600 pb-3 mb-3 border-b  border-gray-100">Credit cards</a>
+                                                                                                                                    <a href="https://halykbank.kz/en/card/mycard" class="text-sm block mb-3 last:mb-0">My!Card</a>
+                                                                                                                                    <a href="https://halykbank.kz/en/card/american-express-white-credit-card" class="text-sm block mb-3 last:mb-0">American Express White</a>
+                                                                                                                                    <a href="https://halykbank.kz/en/card/american-express-blue-card" class="text-sm block mb-3 last:mb-0">American Express Blue</a>
+                                                                                                                                    <a href="https://halykbank.kz/en/card/american-express-gold-card" class="text-sm block mb-3 last:mb-0">American Express Gold</a>
+                                                                                                                                    <a href="https://halykbank.kz/en/card/american-express-platinum" class="text-sm block mb-3 last:mb-0">American Express Platinum</a>
+                                                                                                                                    <a href="https://halykbank.kz/en/card/black-premium" class="text-sm block mb-3 last:mb-0">Black Premium</a>
+                                                                                                                                    <a href="https://halykbank.kz/en/card/infinite" class="text-sm block mb-3 last:mb-0">Infinite</a>
+                                                                </div>
+                                                            <div class="mb-8 last:mb-0">
+                                                                                                    <a href="https://halykbank.kz/en/cards/poleznoe-o-kartah" class="text-lg block font-semibold text-gray-600 pb-3 mb-3 border-b  border-gray-100">Helpful cards information</a>
+                                                                                                                                    <a href="https://halykbank.kz/en/card/3d-securesecure-code" class="text-sm block mb-3 last:mb-0">3D Secure</a>
+                                                                                                                                    <a href="https://halykbank.kz/en/card/doverennyj-nomer" class="text-sm block mb-3 last:mb-0">Trusted number</a>
+                                                                                                                                    <a href="https://halykbank.kz/en/card/epin" class="text-sm block mb-3 last:mb-0">Create and Change Your PIN Code</a>
+                                                                                                                                    <a href="https://halykbank.kz/en/card/push" class="text-sm block mb-3 last:mb-0">Push notifications</a>
+                                                                </div>
+                                                        </div>
+                                                    <div class="w-3/12 gw">
+                                                            <div class="mb-8 last:mb-0">
+                                                                                                    <a href="https://halykbank.kz/en/cards/platezhi-smartfonami" class="text-lg block font-semibold text-gray-600 pb-3 mb-3 border-b  border-gray-100">Payment by smartphone</a>
+                                                                                                                                    <a href="https://halykbank.kz/en/card/google-pay" class="text-sm block mb-3 last:mb-0">Google Pay</a>
+                                                                                                                                    <a href="https://halykbank.kz/en/card/apple-pay" class="text-sm block mb-3 last:mb-0">Apple Pay</a>
+                                                                                                                                    <a href="https://halykbank.kz/en/card/samsung-pay" class="text-sm block mb-3 last:mb-0">Samsung Pay</a>
+                                                                </div>
+                                                        </div>
+                                                                            <div class="w-3/12 gw ml-auto">
+                                <div class="">
+                                    <div class="h-full border border-gray-100 bg-gray-50 rounded-xl flex flex-col">
+                                                                            <div class=""><img src="https://halykbank.kz/storage/app/media/Submenu/Card_submenu.jpg" class="rounded-t-xl" alt=""></div>
+                                                                            <div class="p-4 flex-3 flex flex-col justify-between">
+                                            <div class="mb-3">
+                                                <div class="text-lg font-bold mb-3">Бесплатная доставка</div>
+                                                <div class="text-sm text-gray-600 min-h-90px">3 простых шага для получения карты в приложении Halyk Homebank. Закажите карту онлайн и пользуйтесь всеми преимуществами.</div>
+                                            </div>
+                                                                                    <div class="">
+                                                <a href="https://halykbank.kz/card/dostavka" class="btn btn-green-light">Подробнее</a>
+                                            </div>
+                                                                                </div>
+                                    </div>
+                                </div>
+                            </div>
+                                                </div>
+                    </div>
+                </div>
+                        </div>
+                    <div class="px-2 group _css-hover-group ">
+                <a href="https://halykbank.kz/en/deposits" class="block relative group-hover:text-primary">
+                    Deposits
+                    <span class="absolute inset-x-0 top-full h-[12px]"></span>
+                    <span class="bg-primary absolute inset-x-0 h-[3px] bottom-[-12px] opacity-0 group-hover:opacity-100"></span>
+                </a>
+                            <div class="absolute top-full inset-x-0 z-50 bg-gray-50 pt-8 pb-[148px] _css-hover-group-sub">
+                    <div class="container">
+                        <div class="flex flex-wrap -gw">
+                                                    <div class="w-3/12 gw">
+                                                            <div class="mb-8 last:mb-0">
+                                                                                                    <a href="https://halykbank.kz/en/deposit/srochnye-vklady" class="text-lg block font-semibold text-gray-600 pb-3 mb-3 border-b  border-transparent">Deposits</a>
+                                                                </div>
+                                                            <div class="mb-8 last:mb-0">
+                                                                                                    <a href="https://halykbank.kz/en/deposit/10-kompensaciya" class="text-lg block font-semibold text-gray-600 pb-3 mb-3 border-b  border-transparent">10% compensation for KZT deposits</a>
+                                                                </div>
+                                                        </div>
+                                                    <div class="w-3/12 gw">
+                                                            <div class="mb-8 last:mb-0">
+                                                                                                    <a href="https://halykbank.kz/en/deposit/obrazovatelnyj" class="text-lg block font-semibold text-gray-600 pb-3 mb-3 border-b  border-transparent">AQYL educational contribution</a>
+                                                                </div>
+                                                        </div>
+                                                    <div class="w-3/12 gw">
+                                                            <div class="mb-8 last:mb-0">
+                                                                                                    <a href="https://halykbank.kz/en/deposit/garantirovanie-vseh-vkladov" class="text-lg block font-semibold text-gray-600 pb-3 mb-3 border-b  border-transparent">Deposit guarantee</a>
+                                                                </div>
+                                                        </div>
+                                                                            <div class="w-3/12 gw ml-auto">
+                                <div class="">
+                                    <div class="h-full border border-gray-100 bg-gray-50 rounded-xl flex flex-col">
+                                                                            <div class=""><img src="https://halykbank.kz/storage/app/media/Submenu/Deposits_submenu.png" class="rounded-t-xl" alt=""></div>
+                                                                            <div class="p-4 flex-3 flex flex-col justify-between">
+                                            <div class="mb-3">
+                                                <div class="text-lg font-bold mb-3">Депозиты онлайн</div>
+                                                <div class="text-sm text-gray-600 min-h-90px">Откройте онлайн надежный депозит с высокой ставкой</div>
+                                            </div>
+                                                                                    <div class="">
+                                                <a href="https://halykbank.kz/deposit/srochnye-vklady" class="btn btn-green-light">Подробнее</a>
+                                            </div>
+                                                                                </div>
+                                    </div>
+                                </div>
+                            </div>
+                                                </div>
+                    </div>
+                </div>
+                        </div>
+                    <div class="px-2 group _css-hover-group ">
+                <a href="https://halykbank.kz/en/transfers" class="block relative group-hover:text-primary">
+                    Transfers
+                    <span class="absolute inset-x-0 top-full h-[12px]"></span>
+                    <span class="bg-primary absolute inset-x-0 h-[3px] bottom-[-12px] opacity-0 group-hover:opacity-100"></span>
+                </a>
+                            <div class="absolute top-full inset-x-0 z-50 bg-gray-50 pt-8 pb-[148px] _css-hover-group-sub">
+                    <div class="container">
+                        <div class="flex flex-wrap -gw">
+                                                    <div class="w-3/12 gw">
+                                                            <div class="mb-8 last:mb-0">
+                                                                                                    <a href="https://halykbank.kz/en/transfer/na-mobilnyj-nomer" class="text-lg block font-semibold text-gray-600 pb-3 mb-3 border-b  border-transparent">Mobile number transfers</a>
+                                                                </div>
+                                                            <div class="mb-8 last:mb-0">
+                                                                                                    <a href="https://halykbank.kz/en/transfer/Western-Union-Online" class="text-lg block font-semibold text-gray-600 pb-3 mb-3 border-b  border-transparent">Western Union Online</a>
+                                                                </div>
+                                                            <div class="mb-8 last:mb-0">
+                                                                                                    <a href="https://halykbank.kz/en/transfer/perevody-v-uzbekistan" class="text-lg block font-semibold text-gray-600 pb-3 mb-3 border-b  border-transparent">Transfers to Uzbekistan</a>
+                                                                </div>
+                                                        </div>
+                                                    <div class="w-3/12 gw">
+                                                            <div class="mb-8 last:mb-0">
+                                                                                                    <a href="https://halykbank.kz/en/transfer/na-karty" class="text-lg block font-semibold text-gray-600 pb-3 mb-3 border-b  border-transparent">Card transfers</a>
+                                                                </div>
+                                                            <div class="mb-8 last:mb-0">
+                                                                                                    <a href="https://halykbank.kz/en/transfer/zolotaya" class="text-lg block font-semibold text-gray-600 pb-3 mb-3 border-b  border-transparent">Gold Crown</a>
+                                                                </div>
+                                                            <div class="mb-8 last:mb-0">
+                                                                                                    <a href="https://halykbank.kz/en/transfer/perevody-face-id" class="text-lg block font-semibold text-gray-600 pb-3 mb-3 border-b  border-transparent">Transfers with Face ID and Touch ID in Halyk Homebank app</a>
+                                                                </div>
+                                                        </div>
+                                                    <div class="w-3/12 gw">
+                                                            <div class="mb-8 last:mb-0">
+                                                                                                    <a href="https://halykbank.kz/en/transfer/na-scheta" class="text-lg block font-semibold text-gray-600 pb-3 mb-3 border-b  border-transparent">Account transfers</a>
+                                                                </div>
+                                                            <div class="mb-8 last:mb-0">
+                                                                                                    <a href="https://halykbank.kz/en/transfer/moneygram" class="text-lg block font-semibold text-gray-600 pb-3 mb-3 border-b  border-transparent">MoneyGram</a>
+                                                                </div>
+                                                        </div>
+                                                                            <div class="w-3/12 gw ml-auto">
+                                <div class="">
+                                    <div class="h-full border border-gray-100 bg-gray-50 rounded-xl flex flex-col">
+                                                                            <div class=""><img src="https://halykbank.kz/storage/app/media/Submenu/Perevody_submenu.png" class="rounded-t-xl" alt=""></div>
+                                                                            <div class="p-4 flex-3 flex flex-col justify-between">
+                                            <div class="mb-3">
+                                                <div class="text-lg font-bold mb-3">На номер телефона</div>
+                                                <div class="text-sm text-gray-600 min-h-90px">Переводы на мобильный номер клиенту любого банка РК в приложении Homebank<br>
+    </div>
+                                            </div>
+                                                                                    <div class="">
+                                                <a href="https://halykbank.kz/transfer/na-mobilnyj-nomer" class="btn btn-green-light">Подробнее</a>
+                                            </div>
+                                                                                </div>
+                                    </div>
+                                </div>
+                            </div>
+                                                </div>
+                    </div>
+                </div>
+                        </div>
+                    <div class="px-2 group _css-hover-group ">
+                <a href="https://halykbank.kz/en/others" class="block relative group-hover:text-primary">
+                    Additional services
+                    <span class="absolute inset-x-0 top-full h-[12px]"></span>
+                    <span class="bg-primary absolute inset-x-0 h-[3px] bottom-[-12px] opacity-0 group-hover:opacity-100"></span>
+                </a>
+                            <div class="absolute top-full inset-x-0 z-50 bg-gray-50 pt-8 pb-[148px] _css-hover-group-sub">
+                    <div class="container">
+                        <div class="flex flex-wrap -gw">
+                                                    <div class="w-3/12 gw">
+                                                            <div class="mb-8 last:mb-0">
+                                                                                                                                                                    <a href="https://halykbank.kz/en/private" class="text-lg block font-semibold text-gray-600 pb-3 mb-3 border-b  border-transparent">Halyk Private</a>
+                                                                </div>
+                                                            <div class="mb-8 last:mb-0">
+                                                                                                    <a href="https://halykbank.kz/en/other/zoloto" class="text-lg block font-semibold text-gray-600 pb-3 mb-3 border-b  border-transparent">Invest in Gold</a>
+                                                                </div>
+                                                            <div class="mb-8 last:mb-0">
+                                                                                                    <a href="https://halykbank.kz/en/other/kassovye" class="text-lg block font-semibold text-gray-600 pb-3 mb-3 border-b  border-transparent">Cash services</a>
+                                                                </div>
+                                                            <div class="mb-8 last:mb-0">
+                                                                                                                                                                    <a href="https://polisonline.kz/" class="text-lg block font-semibold text-gray-600 pb-3 mb-3 border-b  border-transparent">“Halyk” Insurance Company</a>
+                                                                </div>
+                                                        </div>
+                                                    <div class="w-3/12 gw">
+                                                            <div class="mb-8 last:mb-0">
+                                                                                                    <a href="https://halykbank.kz/en/other/epv" class="text-lg block font-semibold text-gray-600 pb-3 mb-3 border-b  border-transparent">LSPP Payout from UAPF</a>
+                                                                </div>
+                                                            <div class="mb-8 last:mb-0">
+                                                                                                    <a href="https://halykbank.kz/en/other/metallicheskie-scheta" class="text-lg block font-semibold text-gray-600 pb-3 mb-3 border-b  border-transparent">Metal account</a>
+                                                                </div>
+                                                            <div class="mb-8 last:mb-0">
+                                                                                                    <a href="https://halykbank.kz/en/other/golosovaya-biometriya" class="text-lg block font-semibold text-gray-600 pb-3 mb-3 border-b  border-transparent">Voice Biometrics</a>
+                                                                </div>
+                                                        </div>
+                                                    <div class="w-3/12 gw">
+                                                            <div class="mb-8 last:mb-0">
+                                                                                                    <a href="https://halykbank.kz/en/other/sejfovye-yachejki" class="text-lg block font-semibold text-gray-600 pb-3 mb-3 border-b  border-transparent">Safe boxes</a>
+                                                                </div>
+                                                            <div class="mb-8 last:mb-0">
+                                                                                                    <a href="https://halykbank.kz/en/other/transfernye" class="text-lg block font-semibold text-gray-600 pb-3 mb-3 border-b  border-transparent">Transfer agent services</a>
+                                                                </div>
+                                                            <div class="mb-8 last:mb-0">
+                                                                                                    <a href="https://halykbank.kz/en/other/halyk-invest" class="text-lg block font-semibold text-gray-600 pb-3 mb-3 border-b  border-transparent">Halyk Invest – it’s easy!</a>
+                                                                </div>
+                                                        </div>
+                                                                        </div>
+                    </div>
+                </div>
+                        </div>
+                </div>
+    </div>
+    </div>
+                </div>
+                            <div class="">
+                  <a href="https://homebank.kz/" class="inline-flex items-center text-xs py-1 px-3 bg-gray-50 rounded-md">
+                    <div class="h-6 inline-flex items-center justify-center"></div>
+                    Halyk
+                  </a>
+                </div>
+                          </div>
+            </div>
+          </div>
+        </div>
+    </header>
     <h1>Welcome to Halyk Bank</h1>
     <p>We are a leading financial institution in Kazakhstan.</p>
     <a href="https://www.halykbank.kz/en/">Visit our website</a>
